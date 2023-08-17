@@ -1,0 +1,51 @@
+algoritmo "boletim"
+// Função :   calcua a media e a situação de um aluno
+// Autor :   cl4r1nd0
+// Data : 17/08/2023
+// Seção de Declarações 
+var
+media, n1, n2, n3, n4 : real
+escola, serie, aluno, situacao : caractere
+inicio
+// Seção de Comandos 
+
+      escreval ("Digite o nome do aluno: ")
+               leia (aluno)
+      escreval ("Digite o nome da escola: ")
+                leia (escola)
+      escreval ("Digite a Série que ", aluno, " estuda")
+               leia (serie)
+      escreval ("Digite a nota do Primeiro Bimestre: ")
+               leia (n1)
+      escreval ("Digite a nota do Segundo Bimestre: ")
+               leia (n2)
+      escreval ("Digite a nota do Terceiro Bimestre: ")
+               leia (n3)
+      escreval ("Digite a nota do Quarto Bimestre: ")
+               leia (n4)
+      media <- (n1+n2+n3+n4)/4
+      
+            se (media >= 7) entao
+            situação <- ("APROVADO")
+            senao
+                 se (media >=6 ) e (media <7) entao
+                 situacao <- ("RECUPERAÇÃO" )
+                 senao
+                         situacao <- ("REPROVADO")
+                      fimse
+                 fimse
+      escreval ("")
+      escreval ("RESUMO")
+      escreval ("O aluno: ", aluno, " estudou na escola: ",escola, " e está na série: ", serie)
+      escreval ("A situação final do aluno; ",aluno," é: ",situacao," com média: ",media)
+      escreval ("")
+      escreval ("")
+      
+      escreval ("Obrigado por consultar nosso sistema, ficamos felizes em atendê-lo(la)!")
+
+
+
+
+
+
+fimalgoritmo
