@@ -1,0 +1,59 @@
+algoritmo "Medir quantidade de linhas"
+
+// Função : Medir a quantidade de linhas de um terreno
+// Autor :   cl4r1nd0
+// Data : 14/08/2023
+// Seção de Declarações 
+
+var
+
+ l1 , l2, l3, l4, total, bracas, resultado : real
+ // Essas variáveis referem-se aos lados e suas medidas em braças (2,20m) e o somatório das mesmas
+ 
+inicio
+
+      escreval ("Bem vindo ao nosso programa que calcula a quantidade de linhas de uma terra.")
+      escreval ("Lembre-se que uma braça mede 2,20m. Para realizar o cálculo, considere: ")
+      escreval ("")
+      escreval ("                  LADO 1                 ")
+      escreval ("         ----------------------          ")
+      escreval ("         .                     .         ")
+      escreval ("         .                     .         ")
+      escreval ("         .                     .         ")
+      escreval (" LADO 3  .                     . LADO 4  ")
+      escreval ("         .                     .         ")
+      escreval ("         .                     .         ")
+      escreval ("         -----------------------         ")
+      escreval ("                 LADO 2                  ")
+      escreval ("")
+   escreval ("Agora digite a quantidade de braças do lado 1: ")
+   leia (l1)
+   
+   escreval ("Digite a quantidade de braças do lado 2: ")
+   leia (l2)
+   
+   escreval ("Digite a quantidade de braças do lado 3: ")
+   leia (l3)
+   
+   escreval ("Digite a quantidade de braças do lado 4: ")
+   leia (l4)
+   
+   // nesseas tres seções, você coloca m1, m2, m3 e m4 que são as medidas dos lados do terreno
+   
+   total <- ((l1+l2)/2) * ((l3+l4)/2) / 625
+   
+   //Aqui é feito o Cálculo para descobrir a quantidade de linhas do terreno. sendo
+   // a soma da medida 1 com a medida 3 / 2 e a soma da medida 2 com medida 4 / 2
+   // sendo multiplicados esses valores e, por fim, dividido por 625 que é a quantidade
+   // de quadros que tem em uma linha, ou seja, 25 vezes 25 braças
+   
+   bracas <- l1+l2+l3+l4
+   // para somar o total de braças é só somar as 4 medidas
+   
+   escreval ("O total de braças é: ", bracas, " e o terreno mede: ", total, " linhas.")
+   escreval ("Obrigado por usar o nosso programa :)")
+   escreval ("cl4r1nd0")
+   //aqui exibe em tela os totais
+   
+   
+fimalgoritmo
