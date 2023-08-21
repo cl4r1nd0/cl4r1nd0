@@ -43,7 +43,7 @@ inicio
    total <- ((l1+l2)/2) * ((l3+l4)/2) / 625
    
    //Aqui é feito o Cálculo para descobrir a quantidade de linhas do terreno. sendo
-   // a soma da medida 1 com a medida 3 / 2 e a soma da medida 2 com medida 4 / 2
+   // a soma da medida 1 com a medida 2 / 2 e a soma da medida 3 com medida 4 / 2
    // sendo multiplicados esses valores e, por fim, dividido por 625 que é a quantidade
    // de quadros que tem em uma linha, ou seja, 25 vezes 25 braças
    
