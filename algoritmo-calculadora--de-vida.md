@@ -3,9 +3,8 @@ algoritmo "calculadias de vida"
 // Autor :    cl4r1nd0
 // Data : 21/08/2023
 // Seção de Declarações 
-var
-
-dianascimento, mesnascimento, anonascimento, calculaano, calculames, calculadias, ano: inteiro
+var 
+dianascimento, mesnascimento, anonascimento, calculaano, calculames, calculadias, ano: inteiro 
 nome: caractere
 
 inicio
