@@ -5,13 +5,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Bandeira</title>
 	<style type="text/css">
-		
-		body {
-			width: 100%;
-			background: orange;
-			
-			
-		}
 		.quadrado {
 			width: 350px;
 			height: 300px;
@@ -23,7 +16,7 @@
 			width: 200px;
 			height: 210px;
 			position: absolute;
-			top: 92px;
+			top: 50px;
 			left: 83px;
 			rotate: 50deg;
 		}
@@ -33,7 +26,7 @@
 			background: blue;
 			border-radius: 50%;
 			position: absolute;
-			top: 105px;
+			top: 60px;
 			left: 85px;
 			rotate: 50deg;
 
@@ -43,40 +36,16 @@
 			height: 20px;
 			background: white;
 			position: absolute;
-			top: 190px;
+			top: 150px;
 			left: 85px;
 			text-align: center;
 			padding: 1px;
 			font-weight: bold;
 
 		}
-		.menu {
-			font-weight: bold;
-			color: red;
-			padding: 10px;
-			position: relative;
-			margin: 0px;
-			left: 400px;
-		}
-		.corpo {
-			width: 980px;
-			background: blue;
-			padding: 10px;
-			position: absolute;
-				
-		}
-		
-
 	</style>
 </head>
 <body>
-	
-		<div class="menu">
-			<a href="">Menu</a> |
-			<a href="">Quem Somos</a> |
-			<a href="">Contato</a>
-		</div>
-
 		<div class="quadrado">
 			
 		</div>
