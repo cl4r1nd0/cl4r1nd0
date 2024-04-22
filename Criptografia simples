@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Criptografia Simples</title>
+	<style>
+        body {
+           background-image: url(/fundo.jpg); 
+                        
+        }
+        #inputText {
+		height: inherit;
+
+		}
+
+	</style>
+</head>
+<body>
+    
+    <h1>Programa de Criptografia Simples</h1>
+    <textarea id="inputText" placeholder="Digite o texto a ser criptografado"></textarea>
+    <button onclick="criptografar()">Criptografar</button>
+    <button onclick="descriptografar()">Descriptografar</button>
+    <div>
+        <h2>Texto Criptografado</h2>
+        <p id="textoCriptografado"></p>
+    </div>
+    <div>
+        <h2>Texto Descriptografado</h2>
+        <p id="textoDescriptografado"></p>
+    </div>
+
+    <script>
+        function criptografar() {
+            const inputText = document.getElementById("inputText").value;
+            let textoCriptografado = "";
+
+            for (let i = 0; i < inputText.length; i++) {
+                const charCode = inputText.charCodeAt(i);
+                const charCodeCriptografado = charCode + 24; // Exemplo de criptografia simples (deslocamento de um caractere)
+
+                textoCriptografado += String.fromCharCode(charCodeCriptografado);
+            }
+
+            document.getElementById("textoCriptografado").textContent = textoCriptografado;
+        }
+
+        function descriptografar() {
+            const textoCriptografado = document.getElementById("textoCriptografado").textContent;
+            let textoDescriptografado = "";
+
+            for (let i = 0; i < textoCriptografado.length; i++) {
+                const charCode = textoCriptografado.charCodeAt(i);
+                const charCodeDescriptografado = charCode - 24; // Descriptografa com base no mesmo deslocamento
+
+                textoDescriptografado += String.fromCharCode(charCodeDescriptografado);
+            }
+
+            document.getElementById("textoDescriptografado").textContent = textoDescriptografado;
+        }
+    </script>
+</body>
+</html>
